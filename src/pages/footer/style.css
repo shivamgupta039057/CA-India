@@ -1,0 +1,281 @@
+/*footer*/
+.footer-cta {
+	border-bottom: 1px solid #4d4d4d;
+}
+
+.footer-section ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.single-cta i {
+	color: #FF5F1F;
+	font-size: 30px;
+	float: left;
+	margin-top: 8px;
+}
+
+.cta-text {
+	padding-left: 15px;
+	display: inline-block;
+}
+
+.cta-text h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+
+.cta-text span {
+	color: #757575;
+	font-size: 15px;
+}
+
+.footer-content {
+	position: relative;
+	z-index: 2;
+}
+
+.footer-pattern img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 330px;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+
+.footer-logo {
+	margin-bottom: 30px;
+}
+
+.footer-widget svg {
+	color: var(--thm-color-one);
+	margin: 0 10px;
+	font-size: 10px;
+	font-family: 'Font Awesome 5 Pro';
+}
+
+.footer-contact svg {
+	color: #fff;
+	background: var(--thm-color-one);
+	border-radius: 10px;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	line-height: 2.5;
+	position: relative;
+	padding: 8px 0;
+}
+
+.footer-social-icon span {
+	color: #fff;
+	font-size: 16px;
+
+}
+
+.footer-social-icon span {
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	border-radius: 50%;
+	color: #000;
+}
+
+.telegram {
+	background: #F37920;
+	color: #000;
+}
+
+.footer-social-icon span svg {
+	color: #fff !important;
+	font-size: 18px;
+	margin: 0 auto;
+}
+
+.whatsappp {
+	background: #55B848;
+	color: #FFF I !important;
+}
+
+.linkdin {
+	background: #145886;
+	color: #000;
+}
+
+.footer-contact {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+i.fab.fa-facebook-f.white {
+	background: #fff;
+	color: #000;
+}
+
+.footer-text.mb-25 span {
+	color: #a8aec4;
+	position: relative;
+	top: -13px;
+	left: 46px;
+}
+
+.footer-logo img {
+	max-width: 200px;
+}
+
+.footer-details {
+	display: grid;
+	gap: 20px;
+}
+
+.footer-text p {
+	margin: 0;
+	font-size: 14px;
+	color: #a8aec4;
+	line-height: 28px;
+}
+
+.footer-social-icon span {
+	color: #000;
+	display: block;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+
+	display: inline-block;
+}
+
+.footer-social-icon {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.footer-social-icon a {
+	color: #fff;
+	font-size: 16px;
+	margin-right: 15px;
+}
+
+.footer-social-icon i {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+}
+
+.facebook-bg {
+	background: #3B5998;
+}
+
+.twitter-bg {
+	background: #55ACEE;
+}
+
+.google-bg {
+	background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.footer-widget-heading h3::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	height: 2px;
+	width: 50px;
+	background: var(--thm-color-one);
+}
+
+.footer-widget ul li {
+	display: block;
+	width: 50%;
+	margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+	color: #ffc107;
+}
+
+.footer-widget ul li a {
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.subscribe-form {
+	position: relative;
+	overflow: hidden;
+}
+
+.subscribe-form input {
+	width: 100%;
+	padding: 14px 28px;
+	background: #fff;
+	border: 1px solid #2E2E2E;
+	color: #2E2E2E;
+	;
+}
+
+.subscribe-form button {
+	position: absolute;
+	right: 0;
+	background: #FF5F1F;
+	padding: 13px 20px;
+	border: 2px solid #FF5F1F;
+	top: 0;
+}
+
+.subscribe-form button i {
+	color: #fff;
+	font-size: 22px;
+	transform: rotate(-6deg);
+}
+
+.copyright-area {
+	background: #000;
+	padding: 25px 0;
+	border-top: 1px solid #343940;
+}
+
+.copyright-text p {
+	margin: 0;
+	font-size: 14px;
+	color: #fff;
+}
+
+.footer-menu {
+	display: flex;
+	justify-content: end;
+}
+
+.copyright-text p a {
+	color: #ff5e14;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+	color: #ff5e14;
+}
+
+.footer-menu li a {
+	font-size: 14px;
+	color: #878787;
+}
+
+footer.footer-section {
+	background: #000 !important;
+}

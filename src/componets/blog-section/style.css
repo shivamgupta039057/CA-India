@@ -1,0 +1,107 @@
+/*our articles*/
+.our-work-sec .section-header h3 {
+    color: #000;
+}
+
+.blog-details .post .post-wrapper .blog-meta .post-meta-box .post-meta .post-date,
+.our_articles .post .post-wrapper .post-img .post-date {
+    text-align: center;
+    width: 70px;
+    margin-top: 0px;
+    z-index: 1;
+    position: absolute;
+    left: 280px;
+    top: 0px;
+    text-transform: capitalize;
+}
+
+.blog-details .post .post-wrapper .blog-meta .post-meta-box .post-meta .post-date .year,
+.our_articles .post .post-wrapper .post-img .post-date .year {
+    background-color: var(--thm-color-blue);
+}
+
+.blog-meta span i {
+    color: var(--thm-color-one);
+}
+
+.our_articles .post .post-wrapper .blog-meta .post-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-details .post .post-wrapper .blog-meta .post-meta-box .post-meta .post-date .date,
+.our_articles .post .post-wrapper .post-img .post-date .date {
+    font-size: 30px;
+    line-height: 1.1;
+    padding: 7px 0;
+}
+
+.our_articles .post .post-wrapper .blog-meta .post-heading h2 {
+    margin-top: -10px;
+    line-height: 28px;
+}
+
+.our_articles .post .post-wrapper .post-footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f5f5f5;
+    background: #fff;
+}
+
+.text-light-dark {
+    color: #838383;
+}
+
+.text-custom-black {
+    color: #000000;
+}
+
+.fs-20 {
+    font-size: 22px;
+}
+
+.text-light-dark {
+    color: #838383 !important;
+}
+
+.bx-wrapper {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f3f3f3;
+}
+
+.bg-custom-white {
+    background-color: #ffffff;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.bg-custom-blue {
+    background: var(--thm-color-one);
+}
+
+.post-heading h2 {
+    margin: 0 0 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+.post-heading p {
+    margin: 0;
+}
+
+a.animated-button.victoria-one {
+    border: 2px solid var(--thm-color-one);
+    z-index: 1;
+}
+
+.our_articles .post .post-wrapper .post-footer .post-author a {
+    color: #000;
+}
+
+.our_articles .post .post-wrapper .post-footer>a {
+    text-transform: uppercase;
+    padding: 6px 20px;
+}

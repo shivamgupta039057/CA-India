@@ -1,0 +1,106 @@
+.tabing-section-heading h3 {
+    color: #000 !important;
+}
+
+.details h1 {
+    color: #000;
+}
+
+.about-us-section .section-header h3 {
+    color: #000;
+}
+
+.about-us-section .section-header {
+    max-width: 550px;
+    padding-bottom: 50px;
+    margin: 0 auto 0 0;
+    text-align: left;
+    position: relative;
+}
+
+.tabs .nav-tabs .nav-item {
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.tabing-details p {
+    color: #000;
+    margin: 0;
+    padding: 27px 27px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+}
+
+/* Adjustments to improve the visual appearance */
+
+/* Main container */
+.about-us-section .container {
+    padding-top: 10px;
+    /* Add some top padding */
+    /* padding-bottom: 50px; */
+    /* Add some bottom padding */
+}
+
+/* Section header */
+.section-header {
+    text-align: center;
+    /* Center align the header */
+    margin-bottom: 40px;
+    /* Add space between header and tabs */
+}
+
+/* Tab navigation */
+.tabs .nav-tabs .nav-item {
+    margin-bottom: 0;
+    /* Remove extra bottom margin */
+}
+
+.tabs .nav-tabs .nav-item .nav-link {
+    padding: 12px 30px;
+    /* Adjust padding */
+    color: var(--thm-color-one);
+    cursor: pointer;
+}
+
+.tabs .nav-tabs .nav-item .nav-link.active:before {
+    border-top-color: var(--thm-color-green);
+    /* Adjust color */
+    color: var(--thm-color-green) !important;
+}
+
+span.nav-link.active {
+    color: var(--thm-color-green) !important;
+}
+
+/* Tab content */
+.tabing-details {
+    padding-top: 30px;
+    /* Add some top padding */
+}
+
+.tabing-details p {
+    margin-bottom: 30px;
+    /* Add space between paragraphs */
+}
+
+/* Image styling */
+.about_img.animate_about_img img {
+    border-radius: 10px;
+    /* Increase border radius for smoother corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tabs .nav-tabs .nav-item .nav-link {
+        padding: 12px 20px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+/* Add more styles as needed */
+
+
+/* Add more styles as needed */
