@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Subheader from '../../componets/subheader/Subheader'
 import ContactDetails from '../../componets/contact-details/ContactDetails'
 import { send } from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 
 function Contact() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     const [value, setValue] = useState({
         name: '',
         email: '',
@@ -77,14 +81,18 @@ function Contact() {
     return (
         <>
 
-            <Subheader heading={"Our Contact"} />
+            <Subheader
+                images={"assets/images/contact-us-sub.jpg"}
+            />
 
             <ContactDetails />
+
+
 
             <section class="section contact-pagess">
                 <div class="container">
                     <div class="section-header p-0">
-                        <h3 class="title">Get In Touch</h3>
+                        <h3 class="title">How can we help </h3>
                     </div>
                     <form className="row contact_form" onSubmit={handleSubmit} style={{ alignItems: "center" }}>
                         <div className="col-lg-7">
@@ -94,12 +102,12 @@ function Contact() {
                                     name="name"
                                     id="fullName"
                                     className="form-control form-control-custom"
-                                    placeholder="Full Name"
+                                    placeholder="Name"
                                     autoComplete="off"
                                     value={value.name}
                                     onChange={handleChange}
                                 />
-                                <label htmlFor="fullName">Full Name</label>
+                                <label htmlFor="fullName">Name</label>
                                 {errors.name && <p className="text-danger">{errors.name}</p>}
                             </div>
                             <div className="form-group form-floating">
@@ -110,9 +118,9 @@ function Contact() {
                                     className="form-control form-control-custom"
                                     value={value.email}
                                     onChange={handleChange}
-                                    placeholder="Email I'd" autoComplete="off"
+                                    placeholder="Email ID" autoComplete="off"
                                 />
-                                <label htmlFor="emailId">Email I'd</label>
+                                <label htmlFor="emailId">Email ID</label>
                                 {errors.email && <p className="text-danger">{errors.email}</p>}
                             </div>
                             <div className="form-group form-floating">
@@ -134,21 +142,21 @@ function Contact() {
                                     name="msg"
                                     id="message"
                                     className="form-control form-control-custom"
-                                    placeholder="Message"
+                                    placeholder="Explain Your Requirement"
                                     autoComplete="off"
                                     value={value.msg}
                                     onChange={handleChange}
                                 ></textarea>
-                                <label htmlFor="message">Message</label>
+                                <label htmlFor="message">Explain Your Requirement</label>
                                 {errors.msg && <p className="text-danger">{errors.msg}</p>}
                             </div>
 
-                            <button type="submit" className="thm-btn">Leave Comment</button>
+                            <button type="submit" className="thm-btn">Submit</button>
                             <ToastContainer />
                         </div>
                         <div className="col-lg-5">
-                            <div className="contact-img" style={{position : "relative" , top : "-40px"}}>
-                                <img src="assets/images/contact.jpeg" alt="" style={{borderRadius : "10px"}} />
+                            <div className="contact-img" style={{ position: "relative", top: "-40px" }}>
+                                <img src="assets/images/contact.jpeg" alt="" style={{ borderRadius: "10px" }} />
                             </div>
                         </div>
                     </form>

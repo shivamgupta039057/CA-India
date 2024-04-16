@@ -24,10 +24,12 @@ function Footer() {
                            <h3>Important Links </h3>
                         </div>
                         <ul>
-                           <li><FaArrowRight /><a href="https://www.incometax.gov.in/iec/foportal/">Income Tax</a></li>
-                           <li><FaArrowRight /><a href="https://www.incometax.gov.in/iec/foportal/">ICAI   </a></li>
-                           <li><FaArrowRight /><a href="https://www.incometax.gov.in/iec/foportal/">MCA</a></li>
-                           <li><FaArrowRight /><a href="https://www.rbi.org.in/">RBI </a></li>
+                           <li><FaArrowRight /> <Link to={`https://www.incometax.gov.in/iec/foportal/`} target="_blank">Income Tax</Link> </li>
+                           <li><FaArrowRight /> <Link to={`https://www.icai.org/`} target="_blank"> ICAI </Link>  </li>
+                           <li><FaArrowRight /> <Link to={`https://www.mca.gov.in/content/mca/global/en/home.html`} target="_blank"> MCA </Link></li>
+                           <li><FaArrowRight /><Link to={`https://www.rbi.org.in/`} target="_blank"> RBI </Link></li>
+                           <li><FaArrowRight /><Link to={`https://www.rbi.org.in/`} target="_blank"> GST </Link></li>
+
                         </ul>
                      </div>
                   </div>
@@ -37,7 +39,7 @@ function Footer() {
                            <h3>Go To</h3>
                         </div>
                         <ul>
-                           <li><FaArrowRight /><Link to='/'>Home</Link></li>
+                           <li><FaArrowRight /><Link to='/' >Home</Link></li>
                            <li><FaArrowRight /><Link to='/services'>Services</Link></li>
                            <li><FaArrowRight /><Link to='/blog'>Blog</Link></li>
                            <li><FaArrowRight /><Link to='/contact'>Contact</Link></li>
@@ -80,14 +82,9 @@ function Footer() {
          <div class="copyright-area">
             <div class="container">
                <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                     <div class="copyright-text d-flex">
-                        <p class="text-custom-white">Vinay Kumar M & CO Chartered Accountants</p>
-                     </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                     <div class="footer-menu">
-                        <span>Copyright © 2024. All rights reserved.</span>
+                  <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                     <div class="copyright-text d-flex" style={{ justifyContent: "center" }}>
+                        <p class="text-custom-white">⦁	C@ 2024 Vinay Kumar M & Co | All rights reserved.</p>
                      </div>
                   </div>
                </div>

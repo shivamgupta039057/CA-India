@@ -958,7 +958,7 @@ textarea.form-control-custom+i {
 
 .header .nav_inner .logo img {
     object-position: left;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .header .navigation {

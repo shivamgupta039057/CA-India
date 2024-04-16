@@ -1,7 +1,6 @@
-import react from 'react'
+import react, { useEffect } from 'react'
 import Header from './pages/header/Index'
 import Footer from './pages/footer/Footer'
-import About from './pages/about/About';
 import {
   BrowserRouter,
   Route,
@@ -15,6 +14,9 @@ import ServicesPages from './pages/services/Services';
 
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [Blog])
 
   return (
     <>
@@ -23,7 +25,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/services' element={<ServicesPages />} />
-          <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<h1> 404 Not Found </h1>} />

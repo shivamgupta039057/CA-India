@@ -7,11 +7,7 @@ import './style.css'
 
 function ContactDetails() {
     const contactDetails = [
-        {
-            icon: FaLocationDot,
-            heading: '8-3-169/1, 301,',
-            subheading: ' Hyderabad 500038'
-        },
+
         {
             icon: FaPhoneAlt,
             heading: '+91 8790595858',
@@ -21,9 +17,14 @@ function ContactDetails() {
         {
             icon: IoMdMail,
             heading: ' contact@cavinaykumar.in',
-            subheading: 'Mail US',
+            subheading: 'Mail Us',
             link: "mailto:contact@cavinaykumar.in"
-        }
+        },
+        {
+            icon: FaLocationDot,
+            heading: '8-3-169/1, 301,',
+            subheading: ' Hyderabad 500038'
+        },
     ]
     return (
         <section className="section-padding services-section-top" style={{ background: "#f9f9f9", paddingBottom: "80px" }}>
@@ -34,14 +35,17 @@ function ContactDetails() {
                             <div className="contact-info-box mb-md-40">
                                 <a href={item.link}>
                                     <item.icon />
-                                    <h6 className="text-theme fw-600">{item.heading}
-                                        <br /> <span className='details-lower'>{item?.subheading}</span></h6>
+                                    <h6 className="text-theme fw-600">{item.subheading}
+                                        <br /> <span className='details-lower'>{item?.heading}</span></h6>
                                 </a>
                             </div>
                         </div>
                     ))}
 
                 </div>
+            </div>
+            <div className="para-data">
+                <p>We recognize that every individual and business have distinct needs. Please use the form below to request a call back.</p>
             </div>
         </section>
     )

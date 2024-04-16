@@ -26,17 +26,54 @@ function Header() {
                             <li class="menu-item" onClick={() => handleActive("Home")}>
                                 <Link to="/" className={isactive == "Home" ? "active" : ''}>Home</Link>
                             </li>
-                            <li class="menu-item" onClick={() => handleActive("Services")}>
+                            <li class="menu-item menu-item-has-children" onClick={() => handleActive("Services")}>
                                 <Link to="/services" className={isactive == "Services" ? "active" : ''}>Services</Link>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-has-children">
+                                        <Link to='/'>Home v1</Link>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v1</Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v2 </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <Link to='/'>Home v1</Link>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v1</Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v2 </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="menu-item" onClick={() => handleActive("Contact")}>
                                 <Link to="/contact" className={isactive == "Contact" ? "active" : ''}>Contact</Link>
+
                             </li>
 
                             <li class="menu-item" onClick={() => handleActive("Blog")}>
                                 <Link to="/blog" className={isactive == "Blog" ? "active" : ''}>Blog</Link>
                             </li>
-                            
+
+                            {/* <li class="menu-item menu-item-has-children">
+                                <a href="#" class="active">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="index.html">Home v1</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <Link to='/'>Home v2</a>
+                                    </li>
+                                </ul>
+                            </li> */}
+
 
                         </ul>
                     </nav>

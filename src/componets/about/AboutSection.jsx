@@ -6,7 +6,7 @@ import { FaRegCalendarCheck } from "react-icons/fa";
 
 
 function AboutSection() {
-    const [tabingData, setTabingData] = useState('About US');
+    const [tabingData, setTabingData] = useState('About Us');
     console.log("tabingdataaa", tabingData);
     const tabingHandle = (data) => {
 
@@ -24,27 +24,27 @@ function AboutSection() {
                         <div className="tabing-section">
                             <div className="tabs filter-gallery">
                                 <ul className='custom-flex nav nav-tabs mb-xl-40'>
-                                    <li className='nav-item' onClick={() => tabingHandle("About US")}>
-                                        <span className={`nav-link ${tabingData === "About US" ? "active" : ""}`}>
-                                           <span className='icon-inner'><TbUserPlus /></span> About US
+                                    <li className='nav-item' onClick={() => tabingHandle("About Us")}>
+                                        <span className={`nav-link ${tabingData === "About Us" ? "active" : ""}`}>
+                                            <span className='icon-inner'><TbUserPlus /></span> About Us
                                         </span>
-                                      
+
                                     </li>
                                     <li className='nav-item' onClick={() => tabingHandle("Our Mission")}>
                                         <span className={`nav-link ${tabingData === "Our Mission" ? "active" : ""}`}>
-                                          <span className='icon-inner'><AiOutlineStock /></span>  Our Mission
+                                            <span className='icon-inner'><AiOutlineStock /></span>  Our Mission
                                         </span>
                                     </li>
                                     <li className='nav-item' onClick={() => tabingHandle("Our Network")}>
                                         <span className={`nav-link ${tabingData === "Our Network" ? "active" : ""}`}>
-                                           <span className='icon-inner'><FaRegCalendarCheck /></span> Our Network
+                                            <span className='icon-inner'><FaRegCalendarCheck /></span> Our Network
                                         </span>
                                     </li>
                                 </ul>
                             </div>
 
                             <div className="tabing-details">
-                                {tabingData === "About US" ?
+                                {tabingData === "About Us" ?
                                     <>
                                         {/* <div className="tabing-innner-img mt-3">
                                             <img src="assets/images/about/3.jpg" alt="" />
@@ -77,7 +77,7 @@ function AboutSection() {
                                             </>
                                             :
                                             <h1>npyifdjog</h1>
-                                        }
+                                }
                             </div>
                         </div>
                         <div className="introduction-ourself">
@@ -89,34 +89,34 @@ function AboutSection() {
                         <div class="row">
 
                             <div class="col-sm-12">
-                               
-                                {tabingData === "About US" ?
+
+                                {tabingData === "About Us" ?
                                     <>
-                                         <div class="about_img animate_about_img">
-                                    <img src="assets/images/about/about.jpg" alt="img" class="image-fit" />
-                                </div>
+                                        <div class="about_img animate_about_img">
+                                            <img src="assets/images/about/About us Logo.png" alt="img" class="image-fit" />
+                                        </div>
 
 
                                     </>
                                     :
                                     tabingData === "Our Mission" ?
                                         <>
-                                             <div class="about_img animate_about_img">
-                                    <img src="assets/images/about/mission.jpeg" alt="img" class="image-fit" />
-                                </div>
+                                            <div class="about_img animate_about_img mission-img">
+                                                <img src="assets/images/about/vission.jpg" alt="img" class="image-fit" />
+                                            </div>
 
                                         </>
                                         :
                                         tabingData === "Our Network" ?
                                             <>
                                                 <div class="about_img animate_about_img">
-                                    <img src="assets/images/about/network.jpeg" alt="img" class="image-fit" />
-                                </div>
+                                                    <img src="assets/images/about/network.jpeg" alt="img" class="image-fit" />
+                                                </div>
 
                                             </>
                                             :
                                             <h1>npyifdjog</h1>
-                                        }
+                                }
                             </div>
                         </div>
                     </div>

@@ -21,6 +21,22 @@
     border-radius: 18px;
 }
 
+.para-data {
+    display: flex;
+    justify-content: center;
+}
+
+.para-data p {
+    font-size: 17px;
+    color: #000;
+    max-width: 800px;
+    text-align: center;
+    padding-top: 90px;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
 .contact-info-box h6 {
     line-height: 26px;
     margin: 0 0 20px;
@@ -29,10 +45,11 @@
     color: #000;
     margin: 0;
 }
+
 .contact-info-box span {
-  
+
     font-weight: 700;
-    
+
 }
 
 .contact-info-box:hover.contact-info-box svg {
