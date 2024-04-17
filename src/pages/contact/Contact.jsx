@@ -15,6 +15,8 @@ function Contact() {
         phone: '',
         msg: ''
     });
+    const [result, setResult] = useState("");
+    console.log("fresfultt", result);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,7 +30,7 @@ function Contact() {
 
     // console.log("errosfdifs", errors);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         // Basic validation
@@ -47,28 +49,32 @@ function Contact() {
 
         if (Object.keys(errors).length === 0) {
 
-            // send(
-            //     'service_0gjeewc',
-            //     'template_7zwhrrl',
-            //     value,
-            //     'AQ5y4TfCaXPLoLgUN'
-            // )
-            //     .then((response) => {
-            //         console.log('SUCCESS!', response.status, response.text);
-            //         if (response.status == 200) {
+            e.preventDefault();
+            setResult("Sending....");
+            toast("Sending....");
+            const formData = new FormData(e.target);
+            formData.append("access_key", "fda50228-ec51-4d80-9790-b45544a34fed");
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
 
-            //             setValue({
-            //                 name: '',
-            //                 email: '',
-            //                 phone: '',
-            //                 msg: ''
-            //             });
-            //             toast("Message sent sucessfully");
-            //         }
-            //     })
-            //     .catch((err) => {
-            //         console.log('FAILED...', err);
-            //     });
+            const data = await response.json();
+
+            if (data.success) {
+                setResult("Form Submitted Successfully");
+                toast("Form Submitted Successfully");
+                setValue({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    msg: ''
+                })
+            } else {
+                console.log("Error", data);
+                setResult(data.message);
+            }
+
             console.log('Form submitted successfully');
         } else {
             setErrors(errors);
@@ -93,7 +99,9 @@ function Contact() {
                 <div class="container">
                     <div class="section-header p-0">
                         <h3 class="title">How can we help </h3>
+                        <p className='submit-data'>{result ? result : ''}</p>
                     </div>
+
                     <form className="row contact_form" onSubmit={handleSubmit} style={{ alignItems: "center" }}>
                         <div className="col-lg-7">
                             <div className="form-group form-floating">

@@ -11,15 +11,15 @@ function Services() {
     // Updated selected options array with initial values for each box
     const [selectedOptions, setSelectedOptions] = useState([
         'Startup Advisory', // For box 1
-        'Startudfsagp Advisory', // For box 2
-        'Startup Advisory',
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
-        'Startup Advisory', // For box 3
+        ' Business License ', // For box 2
+        'Business Registration ',
+        'GST ', // For box 3
+        'Income Tax', // For box 3
+        'Business Management ', // For box 3
+        'Business Compliances ', // For box 3
+        'Trademark & IP Rights ', // For box 3
+        'Non-Profit Organization ', // For box 3
+        'Global structuring ', // For box 3
         // For box 3
         // Add more initial values as needed
     ]);
@@ -27,141 +27,116 @@ function Services() {
     // Updated options array with new heading names and inner option data
     const options = [
         {
-            heading: 'Heading 1',
+            heading: "Startup Advisory",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Nudging Business idea to plan",
+                "Pitch Desk",
+                "Monthly MIS",
+                "CMA Report",
+                "Budgeting and Variance Analysis",
+                "Cloud Accounting",
+                "Taxation and Legal Compliance",
+                "Treasury and Cash flow management",
+                "V-CFO services"
             ]
         },
         {
-            heading: 'Heading 2',
+            heading: "Business License",
             innerOptions: [
-                'New Option A',
-                'New Option B',
-                'New Option C',
-                // Add more options as needed
+                "Labour License (Shop & Est)",
+                "Trade License",
+                "Drug License",
+                "Import Export Code (IEC)",
+                "Food Safety License",
+                "MSME Udyam Aadhaar"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Business Registration",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Sole-Proprietorship Firm",
+                "Limited Liability Partnership (LLP)",
+                "One Person Company (OPC)",
+                "Private Limited Company",
+                "Finance Company (Nidhi)",
+                "Producer Company (Farmers)"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "GST",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "GST Registration",
+                "GST Returns",
+                "GST Cancellation",
+                "Reply to GST Notice",
+                "Refunds for IGST",
+                "Liaison with the department for dispute resolution and assessment"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Income Tax",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Income Tax Return",
+                "TDS Returns",
+                "Form 16 Issuance",
+                "e-Pay Tax",
+                "Tax Audit",
+                "Assessment/Appeal/Scrutiny",
+                "Reply to IT Notice"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Business Management",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Fundraising",
+                "Project Report",
+                "Internal Financial Controls",
+                "Strategic Business Advisory",
+                "Payroll Management",
+                "Accounting & Book-keeping"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Trademark & IP Rights",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Trademark Registration",
+                "Trademark Objection",
+                "Trademark Assignment Agreement",
+                "Trademark Renewal",
+                "Copyright Application",
+                "Patent Registration"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Business Compliances",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "MCA Compliances",
+                "Change in LLP Agreement",
+                "Change in Registered Office Address",
+                "Add/Remove - Directors/Partners",
+                "Closing/Strike off - Company/LLP",
+                "Any Other Secretarial Compliances"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Non-Profit Organization",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Society Registration",
+                "Trust Registration",
+                "Section 8 Company Registration",
+                "12A Registration – IT Exemption",
+                "80G Certificate – Tax Free Donations"
             ]
         },
         {
-            heading: 'Heading 1',
+            heading: "Global Structuring",
             innerOptions: [
-                'Nudging Business idea to plan',
-                'Pitch Desk',
-                'Monthly MIS',
-                'CMA Report',
-                'Budgeting and Variance Analysis',
-                'Cloud Accounting',
-                'Taxation and Legal Compliance',
-                'Treasury and Cash flow management',
-                'V-CFO services'
+                "Tax and business restructuring",
+                "Transfer pricing documentation",
+                "Annual FEMA compliance",
+                "Business set up globally"
             ]
-        },
-        // Add more objects for additional boxes
+        }
     ];
 
     const toggleOptionsList = (index) => {

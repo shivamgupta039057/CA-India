@@ -30,9 +30,17 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--thm-color-one);
     background: #fff;
     padding: 9px 10px;
     border-radius: 9px;
+    text-align: center;
+}
+
+.innerdata:hover {
+
+    color: var(--thm-color-blue);
+
 }
 
 .add-boxes {
