@@ -30,24 +30,44 @@ function Header() {
                                 <Link to="/services" className={isactive == "Services" ? "active" : ''}>Services</Link>
                                 <ul class="sub-menu">
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Home v1</Link>
+                                        <Link to='/'>Start Bussiness</Link>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
                                                 <Link to='/'>Home v1</Link>
                                             </li>
                                             <li class="menu-item">
                                                 <Link to='/'>Home v2 </Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v1</Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Home v1</Link>
+                                        <Link to='/'>Legal</Link>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
                                                 <Link to='/'>Home v1</Link>
                                             </li>
                                             <li class="menu-item">
                                                 <Link to='/'>Home v2 </Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v1</Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <Link to='/'>Auth</Link>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <Link to='#id'>Home v1</Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Homeddd v2 </Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Home v1</Link>
                                             </li>
                                         </ul>
                                     </li>

@@ -2234,8 +2234,8 @@ textarea.form-control-custom+i {
 }
 
 p.submit-data {
-    color: green;
-    text-align: left;
-    margin: 0;
-    padding-top: 15px;
+    color: var(--thm-color-green) !important ;
+    text-align: left !important;
+    margin: 0 !important;
+    padding-top: 15px !important;
 }

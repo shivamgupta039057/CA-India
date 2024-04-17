@@ -99,23 +99,27 @@ function Services() {
         {
             heading: "Trademark & IP Rights",
             innerOptions: [
-                "Trademark Registration",
-                "Trademark Objection",
-                "Trademark Assignment Agreement",
-                "Trademark Renewal",
-                "Copyright Application",
-                "Patent Registration"
-            ]
-        },
-        {
-            heading: "Business Compliances",
-            innerOptions: [
+
                 "MCA Compliances",
                 "Change in LLP Agreement",
                 "Change in Registered Office Address",
                 "Add/Remove - Directors/Partners",
                 "Closing/Strike off - Company/LLP",
                 "Any Other Secretarial Compliances"
+               
+            ]
+        },
+        {
+            heading: "Business Compliances",
+            innerOptions: [
+                
+
+                "Trademark Registration",
+                "Trademark Objection",
+                "Trademark Assignment Agreement",
+                "Trademark Renewal",
+                "Copyright Application",
+                "Patent Registration"
             ]
         },
         {
@@ -148,10 +152,10 @@ function Services() {
     const selectOption = (option, index) => {
         const newOptions = [...selectedOptions];
         newOptions[index] = option;
-        setSelectedOptions(newOptions);
+        // setSelectedOptions(newOptions);
         const newList = [...isOpenList];
         newList[index] = false;
-        setIsOpenList(newList);
+        // setIsOpenList(newList);
     };
 
     return (

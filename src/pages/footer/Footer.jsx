@@ -84,7 +84,7 @@ function Footer() {
                <div class="row">
                   <div class="col-xl-12 col-lg-12 text-center text-lg-left">
                      <div class="copyright-text d-flex" style={{ justifyContent: "center" }}>
-                        <p class="text-custom-white">⦁	C@ 2024 Vinay Kumar M & Co | All rights reserved.</p>
+                        <p class="text-custom-white">C@ 2024 Vinay Kumar M & Co | All rights reserved.</p>
                      </div>
                   </div>
                </div>
