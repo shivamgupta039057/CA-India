@@ -49,7 +49,7 @@ function BlogSection() {
                             {BlogObject?.map((item, index) => (
                                 <React.Fragment key={index}>
                                     <div className="col-sm-4">
-                                        <article className="col-12 post slide-item">
+                                        <ar.innerdataticle className="col-12 post slide-item">
                                             <div className="post-wrapper bx-wrapper">
                                                 <div className="post-img animate-img">
                                                     <a href="blog-details.html">
@@ -82,7 +82,7 @@ function BlogSection() {
                                                     <a href="blog-details.html" className="btn btn-sm animated-button victoria-one pt-2">Read More</a>
                                                 </div>
                                             </div>
-                                        </article>
+                                        </ar.innerdataticle>
                                     </div>
                                 </React.Fragment>
                             ))}

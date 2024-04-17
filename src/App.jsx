@@ -14,9 +14,6 @@ import ServicesPages from './pages/services/Services';
 
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [Blog])
 
   return (
     <>
