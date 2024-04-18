@@ -1,0 +1,84 @@
+.policyHeading-dataass {
+    color: var(--thm-color-one);
+    font-family: "Geogrotesque Wide";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.policies-content-here {
+    color: #000;
+    font-family: "Geogrotesque Wide";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 100%;
+    word-break: break-all;
+}
+
+.row.police-data-contentss {
+    gap: 25px;
+    margin: 0;
+}
+
+.row.polici-main-cont {
+    gap: 8px;
+}
+
+.policies-data-sub-heading {
+    color: var(--thm-color-green);
+    font-family: "Geogrotesque Wide";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+span.top-count-heading svg {
+    font-size: 17px;
+    margin-top: -5px;
+}
+
+
+.policies-ul-here ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.policies-ul-here ul li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    color: #000;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.sdf {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.sdf span {
+    color: var(--thm-color-one);
+}
+
+span.span-data {
+    color: var(--thm-color-one);
+}
+
+.bold-data {
+    font-weight: 900;
+}
+
+.col-lg-12.policies-ul-here span svg {
+    color: var(--thm-color-one);
+}

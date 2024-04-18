@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
     const [isactive, setIsActive] = useState('Home')
@@ -30,7 +31,7 @@ function Header() {
                                 <Link to="/services" className={isactive == "Services" ? "active" : ''}>Services</Link>
                                 <ul class="sub-menu">
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Start Business</Link>
+                                        <ScrollLink to='startBussiness' smooth={true} duration={500}>Start Business </ScrollLink>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
                                                 <Link to='/'>Startup advisory</Link>
@@ -44,7 +45,7 @@ function Header() {
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Manage Business</Link>
+                                        <ScrollLink to='ManageBusiness' smooth={true} duration={500}>Manage Business</ScrollLink>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
                                                 <Link to='/'>Business Management</Link>
@@ -52,11 +53,11 @@ function Header() {
                                             <li class="menu-item">
                                                 <Link to='/'>Business Compliances </Link>
                                             </li>
-                                           
+
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Specialized Services</Link>
+                                        <ScrollLink to='SpecializedServices' smooth={true} duration={500}>Specialized Services</ScrollLink>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
                                                 <Link to='#id'>Trademark & IP rights</Link>
