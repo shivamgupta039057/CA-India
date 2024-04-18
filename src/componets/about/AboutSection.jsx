@@ -102,7 +102,7 @@ function AboutSection() {
                                     tabingData === "Our Mission" ?
                                         <>
                                             <div class="about_img animate_about_img mission-img">
-                                                <img src="assets/images/about/vission.jpg" alt="img" class="image-fit" />
+                                                <img src="assets/images/about/vission.png" alt="img" class="image-fit" />
                                             </div>
 
                                         </>

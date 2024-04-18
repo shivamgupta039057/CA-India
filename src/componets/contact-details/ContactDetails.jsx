@@ -27,11 +27,11 @@ function ContactDetails() {
         },
     ]
     return (
-        <section className="section-padding services-section-top" style={{ background: "#f9f9f9", paddingBottom: "80px" }}>
+        <section className="section-padding services-section-to p-0">
             <div className="container">
                 <div className="row">
                     {contactDetails?.map((item, index) => (
-                        <div className="col-sm-4" key={index}>
+                        <div className="col-sm-12" key={index}>
                             <div className="contact-info-box mb-md-40">
                                 <a href={item.link}>
                                     <item.icon />
@@ -44,9 +44,7 @@ function ContactDetails() {
 
                 </div>
             </div>
-            <div className="para-data">
-                <p>We recognize that every individual and business have distinct needs. Please use the form below to request a call back.</p>
-            </div>
+
         </section>
     )
 }

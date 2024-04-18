@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Subheader from '../../componets/subheader/Subheader'
 import ContactDetails from '../../componets/contact-details/ContactDetails'
-import { send } from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 
 function Contact() {
@@ -91,19 +90,26 @@ function Contact() {
                 images={"assets/images/contact-us-sub.jpg"}
             />
 
-            <ContactDetails />
+
 
 
 
             <section class="section contact-pagess">
                 <div class="container">
                     <div class="section-header p-0">
-                        <h3 class="title">How can we help </h3>
+                        <h3 class="title">We Recognize that every Individual and Business have distinct needs.
+                            Please use the form below to request a call back. In place of How can we help </h3>
                         <p className='submit-data'>{result ? result : ''}</p>
                     </div>
 
                     <form className="row contact_form" onSubmit={handleSubmit} style={{ alignItems: "center" }}>
-                        <div className="col-lg-7">
+                        <div className="col-lg-4">
+                            <ContactDetails />
+                        </div>
+                        <div className="col-lg-8">
+                            <div className="para-data">
+                                <p>We recognize that every individual and business have distinct needs. Please use the form below to request a call back.</p>
+                            </div>
                             <div className="form-group form-floating">
                                 <input
                                     type="text"
@@ -162,11 +168,7 @@ function Contact() {
                             <button type="submit" className="thm-btn">Submit</button>
                             <ToastContainer />
                         </div>
-                        <div className="col-lg-5">
-                            <div className="contact-img" style={{ position: "relative", top: "-40px" }}>
-                                <img src="assets/images/contact.jpeg" alt="" style={{ borderRadius: "10px" }} />
-                            </div>
-                        </div>
+
                     </form>
                 </div>
             </section>
