@@ -1,17 +1,27 @@
 import React from 'react'
 import './style.css'
-import { FaWhatsapp } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-
+import { useThemeData } from '../../context/Context';
 
 
 
 function Footer() {
+
+   const { setCountData, countdata } = useThemeData();
+
+
+
+   const handleClick = () => {
+
+      setCountData(prevCountData => prevCountData + 1);
+
+
+   }
+
+   console.log("setCountData", countdata);
    return (
       <footer class="footer-section">
          <div class="container">
@@ -28,7 +38,7 @@ function Footer() {
                            <li><FaArrowRight /> <Link to={`https://www.icai.org/`} target="_blank"> ICAI </Link>  </li>
                            <li><FaArrowRight /> <Link to={`https://www.mca.gov.in/content/mca/global/en/home.html`} target="_blank"> MCA </Link></li>
                            <li><FaArrowRight /><Link to={`https://www.rbi.org.in/`} target="_blank"> RBI </Link></li>
-                           <li><FaArrowRight /><Link to={`https://www.rbi.org.in/`} target="_blank"> GST </Link></li>
+                           <li><FaArrowRight /><Link to={`https://www.gst.gov.in/`} target="_blank"> GST </Link></li>
 
                         </ul>
                      </div>
@@ -39,10 +49,10 @@ function Footer() {
                            <h3>Go To</h3>
                         </div>
                         <ul>
-                           <li><FaArrowRight /><Link to='/' >Home</Link></li>
-                           <li><FaArrowRight /><Link to='/services'>Services</Link></li>
-                           <li><FaArrowRight /><Link to='/blog'>Blog</Link></li>
-                           <li><FaArrowRight /><Link to='/contact'>Contact</Link></li>
+                           <li onClick={handleClick}><FaArrowRight /><Link to='/' >Home</Link></li>
+                           <li onClick={handleClick}><FaArrowRight /><Link to='/services'>Services</Link></li>
+                           <li onClick={handleClick}><FaArrowRight /><Link to='/blog'>Blog</Link></li>
+                           <li onClick={handleClick}><FaArrowRight /><Link to='/contact'>Contact</Link></li>
                         </ul>
                      </div>
                   </div>
@@ -84,7 +94,7 @@ function Footer() {
                <div class="row">
                   <div class="col-xl-12 col-lg-12 text-center text-lg-left">
                      <div class="copyright-text d-flex" style={{ justifyContent: "center" }}>
-                        <p class="text-custom-white">⦁	C@ 2024 Vinay Kumar M & Co | All rights reserved.</p>
+                        <p class="text-custom-white">C@ 2024 Vinay Kumar M & Co | All rights reserved.</p>
                      </div>
                   </div>
                </div>

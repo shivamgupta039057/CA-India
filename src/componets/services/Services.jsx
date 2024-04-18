@@ -158,7 +158,7 @@ function Services() {
         <section className="section-padding services-section-top" style={{ paddingBottom: "80px" }}>
             <div className="container">
                 <div className="section-header">
-                    <h3 className="title"> A glimpse </h3>
+                    <h3 className="title"> A glimpse of our services  </h3>
                 </div>
                 <div className="row">
                     {options.map((item, index) => (
