@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Subheader from '../../componets/subheader/Subheader'
 import ContactDetails from '../../componets/contact-details/ContactDetails'
 import { ToastContainer, toast } from 'react-toastify';
+import { useThemeData } from '../../context/Context';
 
 function Contact() {
+    const { countdata } = useThemeData();
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, []);
+    }, [countdata]);
 
     const [value, setValue] = useState({
         name: '',
@@ -97,8 +99,7 @@ function Contact() {
             <section class="section contact-pagess">
                 <div class="container">
                     <div class="section-header p-0">
-                        <h3 class="title">We Recognize that every Individual and Business have distinct needs.
-                            Please use the form below to request a call back. In place of How can we help </h3>
+                        
                         <p className='submit-data'>{result ? result : ''}</p>
                     </div>
 
@@ -108,7 +109,7 @@ function Contact() {
                         </div>
                         <div className="col-lg-8">
                             <div className="para-data">
-                                <p>We recognize that every individual and business have distinct needs. Please use the form below to request a call back.</p>
+                                <p>We recognize that every individual and business have distinct needs.<br /> Please use the form below to request a call back.</p>
                             </div>
                             <div className="form-group form-floating">
                                 <input

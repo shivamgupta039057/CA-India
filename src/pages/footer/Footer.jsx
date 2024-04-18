@@ -10,7 +10,7 @@ import { useThemeData } from '../../context/Context';
 
 function Footer() {
 
-   const { setCountData, countdata } = useThemeData();
+   const { setCountData } = useThemeData();
 
 
 
@@ -21,7 +21,7 @@ function Footer() {
 
    }
 
-   console.log("setCountData", countdata);
+   // console.log("setCountData", countdata);
    return (
       <footer class="footer-section">
          <div class="container">

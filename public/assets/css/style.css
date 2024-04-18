@@ -2224,6 +2224,11 @@ textarea.form-control-custom+i {
     z-index: 1;
     transition: all 400ms linear;
 }
+.thm-btn:hover, .thm-btn:focus {
+    color: var(--thm-color-one);
+    background-color: var(--thm-white);
+    border: 1px solid var(--thm-color-one);
+}
 
 .backtotop svg path {
     fill: none;

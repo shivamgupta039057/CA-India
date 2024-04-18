@@ -30,44 +30,45 @@ function Header() {
                                 <Link to="/services" className={isactive == "Services" ? "active" : ''}>Services</Link>
                                 <ul class="sub-menu">
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Start Bussiness</Link>
+                                        <Link to='/'>Start Business</Link>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
-                                                <Link to='/'>Home v1</Link>
+                                                <Link to='/'>Startup advisory</Link>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Home v2 </Link>
+                                                <Link to='/'>Business Registration </Link>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Home v1</Link>
+                                                <Link to='/'>Business Licenses</Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Legal</Link>
+                                        <Link to='/'>Manage Business</Link>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
-                                                <Link to='/'>Home v1</Link>
+                                                <Link to='/'>Business Management</Link>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Home v2 </Link>
+                                                <Link to='/'>Business Compliances </Link>
                                             </li>
-                                            <li class="menu-item">
-                                                <Link to='/'>Home v1</Link>
-                                            </li>
+                                           
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Auth</Link>
+                                        <Link to='/'>Specialized Services</Link>
                                         <ul class="sub-menu">
                                             <li class="menu-item">
-                                                <Link to='#id'>Home v1</Link>
+                                                <Link to='#id'>Trademark & IP rights</Link>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Homeddd v2 </Link>
+                                                <Link to='/'>Non Profit Organisation </Link>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Home v1</Link>
+                                                <Link to='/'>Global Structuring</Link>
+                                            </li>
+                                            <li class="menu-item">
+                                                <Link to='/'>Extended Services</Link>
                                             </li>
                                         </ul>
                                     </li>
