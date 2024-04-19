@@ -40,14 +40,11 @@ function ServicesPages() {
                                                                 className='top-count-heading'><FaAngleDoubleRight /></span> START BUSINESS
                                                         </div>
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Startup Advisory:</span>
+                                                            <span className='bold-data' id='startupAdvisory'>Startup Advisory:</span>
                                                             Recognizing the unique challenges startups encounter, we manage business requirements, freeing entrepreneurs to focus on business growth. Our offerings cover a comprehensive range of services for startups.
 
                                                         </div>
-                                                        <div className="col-lg-12 policies-content-here">
-                                                            (Whether to provide drop downs or not is your choice. If you want to put drop downs like in glimpse page. You can just add Click Here Button)
 
-                                                        </div>
 
                                                         <div className="col-lg-12 policies-ul-here">
 
@@ -66,7 +63,7 @@ function ServicesPages() {
                                                         </div>
 
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Business Registrations and Licences:</span>
+                                                            <span className='bold-data' id='BusinessRegistration'>Business Registrations and Licences:</span>
                                                             We provide full support in obtaining the essential business registrations and licenses required to launch your business successfully. Our goal is to handle the administrative and regulatory aspects efficiently and effectively, allowing you to focus on your core business activities
 
                                                         </div>
@@ -94,7 +91,7 @@ function ServicesPages() {
 
                                                                 <div className="col-lg-6">
                                                                     <div className='sdf'>
-                                                                        <span className='span-data'>Licenses</span>
+                                                                        <span className='span-data' id='BusinessLicenses'>Licenses</span>
                                                                     </div>
 
                                                                     <ul services-unorder-list>
@@ -125,7 +122,7 @@ function ServicesPages() {
                                                                 className='top-count-heading'><FaAngleDoubleRight /></span> MANAGE BUSINESS
                                                         </div>
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Business Management</span>:  Our Business Management services are designed to help entrepreneurs, startups, and established businesses navigate challenges, streamline operations, and achieve sustainable growth. We offer comprehensive Business Management services.
+                                                            <span className='bold-data' id='BusinessManagement'>Business Management</span>:  Our Business Management services are designed to help entrepreneurs, startups, and established businesses navigate challenges, streamline operations, and achieve sustainable growth. We offer comprehensive Business Management services.
                                                         </div>
                                                         <div className="col-lg-12 policies-ul-here">
 
@@ -140,7 +137,7 @@ function ServicesPages() {
 
                                                         </div>
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Business Compliances:</span>
+                                                            <span className='bold-data' id='BusinessCompliances'>Business Compliances:</span>
 
                                                             Staying compliant with the ever-changing regulatory landscape is essential for the smooth operation and reputation of your business. We provide Business Compliances services for your specific needs and ensure adherence to legal requirements.
                                                         </div>
@@ -168,10 +165,12 @@ function ServicesPages() {
                                                         <div className="col-lg-12 policies-data-sub-heading">
                                                             <span
                                                                 id='SpecializedServices'
-                                                                className='top-count-heading'><FaAngleDoubleRight /></span>  SPECIALIZED SERVICES
+                                                                className='top-count-heading'
+
+                                                            ><FaAngleDoubleRight /></span>  SPECIALIZED SERVICES
                                                         </div>
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Trademark & IP rights:</span> In today's innovation-driven world, protecting your intellectual property is vital for sustaining a competitive advantage. Contact us today to learn more about how our Trademark and IP Rights services can help you protect your valuable intellectual assets and drive business success
+                                                            <span className='bold-data' id='Trademark&IPrights'>Trademark & IP rights:</span> In today's innovation-driven world, protecting your intellectual property is vital for sustaining a competitive advantage. Contact us today to learn more about how our Trademark and IP Rights services can help you protect your valuable intellectual assets and drive business success
 
                                                         </div>
                                                         <div className="col-lg-12 policies-ul-here">
@@ -187,7 +186,7 @@ function ServicesPages() {
 
                                                         </div>
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Non-Profit Organization:</span>
+                                                            <span className='bold-data' id='NonProfitOrganisation'>Non-Profit Organization:</span>
 
                                                             Supporting the mission-driven work of non-profit organizations is crucial for building resilient communities and driving positive social change. We offer NPO services to focus on your mission with confidence.
                                                         </div>
@@ -204,7 +203,7 @@ function ServicesPages() {
                                                         </div>
 
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Global Structuring:</span>
+                                                            <span className='bold-data' id='GlobalStructuring'>Global Structuring:</span>
 
                                                             In today's globalized business landscape, expanding your operations across borders requires expert guidance to navigate the complexities of international tax regulations and business strategies. Here's how we can assist you:
 
@@ -221,7 +220,7 @@ function ServicesPages() {
                                                         </div>
 
                                                         <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data'>Extended Services:</span>
+                                                            <span className='bold-data' id='ExtendedServices'>Extended Services:</span>
 
                                                             Despite the core list of services mentioned above, there are numerous cases for which clients may require Chartered Accountancy services. Therefore, we offer a wide range of extended services, including MSME arbitration and Due Diligence. Please feel free to reach out with your requirements using our contact form.
 

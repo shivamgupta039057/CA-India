@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { FaAngleRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 function Services() {
@@ -106,13 +107,13 @@ function Services() {
                 "Add/Remove - Directors/Partners",
                 "Closing/Strike off - Company/LLP",
                 "Any Other Secretarial Compliances"
-               
+
             ]
         },
         {
             heading: "Business Compliances",
             innerOptions: [
-                
+
 
                 "Trademark Registration",
                 "Trademark Objection",
@@ -193,6 +194,9 @@ function Services() {
                             </div>
                         </div>
                     ))}
+                    <div className="services-dd">
+                        <Link to="/services" class="thm-btn sdf"> Read More</Link>
+                    </div>
                 </div>
             </div>
         </section>

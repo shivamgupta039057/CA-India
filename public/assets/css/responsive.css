@@ -25,7 +25,7 @@
 
     .header .navigation {
         display: block;
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 85px;
         height: 0;

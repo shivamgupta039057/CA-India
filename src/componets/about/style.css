@@ -100,7 +100,99 @@ span.nav-link.active {
     }
 }
 
-/* Add more styles as needed */
+@media only screen and (max-width: 600px) {
+    .tabing-details p {
+        margin-bottom: 30px;
+        height: auto;
+        padding: 0;
+    }
 
+    .section-header .title {
 
-/* Add more styles as needed */
+        font-size: 23px;
+    }
+
+    .section-padding {
+        position: relative;
+        padding: 40px 0 30px;
+    }
+
+    .section {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .policies-content-here {
+
+        font-size: 16px !important;
+    }
+
+    .blog-details .post .post-wrapper .blog-meta .post-meta-box .post-meta .post-date,
+    .our_articles .post .post-wrapper .post-img .post-date {
+
+        left: 236px !important;
+
+    }
+
+    .our-work-sec .row {
+        justify-content: center;
+    }
+
+    .para-data p {
+        font-size: 14px !important;
+        margin-bottom: 26px !important;
+        font-weight: 700 !important;
+
+    }
+
+    .contact-pagess .section-header {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    p.submit-data {
+        padding-top: 15px !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 17px;
+    }
+
+    .why-choose-heading h3 {
+        margin: 0;
+        color: #000;
+        font-size: 18px !important;
+        text-transform: capitalize;
+        font-weight: 400 !important;
+        font-style: normal;
+        line-height: 30px;
+    }
+
+    .contact-pagess h3.title {
+        margin-bottom: 30px;
+        font-weight: 900;
+    }
+
+    .nav {
+
+        flex-direction: column;
+    }
+
+    span.nav-link {
+        text-align: left;
+    }
+
+    .contact-pagess h3.title {
+        margin-bottom: 35px !important;
+    }
+
+    .why-choose-us-para {
+
+        margin-bottom: 10px !important;
+    }
+
+    .subheader.section-bg.no-overlay {
+        height: 100px !important;
+        padding: 24px 0;
+    }
+}
