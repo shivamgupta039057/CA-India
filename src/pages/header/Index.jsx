@@ -101,6 +101,20 @@ function Header() {
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Taxation </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  Inconme Tax </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='gstdataheree' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>GST  </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
                                         <ScrollLink to='SpecializedServices' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Specialized Services</span></ScrollLink>
                                         <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
                                             <li class="menu-item">
@@ -126,6 +140,51 @@ function Header() {
 
                             <li class="menu-item" onClick={() => handleActive("Blog")}>
                                 <Link to="/blog" className={isactive == "Blog" ? "active" : ''}>Blog</Link>
+                            </li>
+
+                            <li class="menu-item menu-item-has-children" onClick={() => handleActiveservices("Services")}>
+                                <Link to="/services" className={isactive == "Services" ? "active" : ''} onClick={handlesubmenu}>More</Link>
+
+                                <ul className={`sub-menu ${submenu ? "block" : "none"}`} >
+                                    <li class="menu-item ">
+                                        <ScrollLink to='' smooth={true} duration={500} onClick={handlesubmenuChild}><span className='inner-chld'>Knowledge Hub</span> </ScrollLink>
+
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='ManageBusiness' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Financial Calculators </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessManagement' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  	Loan EMI </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>	SIP   </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>		Simple Interest   </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>		Lumpsum    </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Tax Tools </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  	Tax under Old Regime Vs New Regime </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='gstdataheree' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>	Income and Tax Calculator  </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
 
 

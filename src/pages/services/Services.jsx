@@ -17,14 +17,14 @@ function ServicesPages() {
     return (
         <>
             <Subheader
-                heading={" Our Services"}
+
             />
             {/*  */}
 
             <section class="section-padding bg-light-white blog-details">
                 <div class="container">
                     <div class="row">
-                        <h6 class="d-none">1</h6>
+                        <h6 class="policyHeading-aass">Our Services</h6>
                         <div class="col-12">
                             <div class="blog-details bx-wrapper bg-custom-white padding-20">
                                 <main className='main-content-section'>
@@ -164,6 +164,67 @@ function ServicesPages() {
                                                     <div className="row polici-main-cont">
                                                         <div className="col-lg-12 policies-data-sub-heading">
                                                             <span
+                                                                id='startBussiness'
+                                                                className='top-count-heading'><FaAngleDoubleRight /></span> TAXATION
+                                                        </div>
+
+
+                                                        <div className="col-lg-12 policies-content-here">
+                                                            <span className='bold-data' id='Taxation-paragrapg'>Taxation :</span>
+                                                            Trust us for refreshing taxation solutions as you’ll have access to tax professionals who offer a full range of tax planning, preparation and compliance services. While Income Tax is a direct tax levied on income and profits, GST is an indirect tax, levied on the supply of goods and services.  at each stage of the supply chain, from the manufacturer to the consumer. We navigate both taxation paths efficiently for your financial well-being.
+
+                                                        </div>
+                                                        <div className="col-lg-12 policies-ul-here">
+
+
+
+                                                            <div className="row">
+                                                                <div className="col-lg-6">
+
+                                                                    <ul services-unorder-list>
+                                                                        <div className='sdf'>
+                                                                            <span className='span-data'>Income Tax</span>
+                                                                        </div>
+                                                                        <li><span><FaAngleRight /></span>Income Tax Return</li>
+                                                                        <li><span><FaAngleRight /></span>	e-Pay Tax</li>
+                                                                        <li><span><FaAngleRight /></span>	Tax Audit</li>
+                                                                        <li><span><FaAngleRight /></span>Assessment/Appeal/Scrutiny</li>
+                                                                        <li><span><FaAngleRight /></span>Reply to IT Notice</li>
+
+
+                                                                    </ul>
+
+                                                                </div>
+
+                                                                <div className="col-lg-6">
+                                                                    <div className='sdf'>
+                                                                        <span className='span-data' id='gstdataheree'>GST </span>
+                                                                    </div>
+
+                                                                    <ul services-unorder-list>
+                                                                        <li><span><FaAngleRight /></span>	GST Registration</li>
+                                                                        <li><span><FaAngleRight /></span>	GST Returns</li>
+                                                                        <li><span><FaAngleRight /></span>	GST Cancellation</li>
+                                                                        <li><span><FaAngleRight /></span>Reply to GST Notice</li>
+                                                                        <li><span><FaAngleRight /></span>Refunds for IGST</li>
+                                                                        <li><span><FaAngleRight /></span>	Liaison with the department for dispute resolution and assessment</li>
+
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                {/*  */}
+
+                                                <div className="col-lg-12">
+                                                    <div className="row polici-main-cont">
+                                                        <div className="col-lg-12 policies-data-sub-heading">
+                                                            <span
                                                                 id='SpecializedServices'
                                                                 className='top-count-heading'
 
@@ -228,7 +289,7 @@ function ServicesPages() {
                                                         <div className="col-lg-12 policies-ul-here">
 
                                                             <ul>
-                                                                <li><span><FaAngleRight /></span>Net Worth Certificate for VISA</li>
+                                                                <li><span><FaAngleRight /></span>CA Certifications</li>
                                                                 <li><span><FaAngleRight /></span>MSME Arbitration</li>
                                                                 <li><span><FaAngleRight /></span>Due Diligence</li>
                                                             </ul>

@@ -223,10 +223,9 @@ img {
 }
 
 .subheader.classs {
-    padding: 165px 0 80px;
-    background-position: center 110px !important;
-    height: auto !important;
-    background-size: auto !important;
+
+    padding: 80px 0 80px;
+    background-size: contain;
 }
 
 
@@ -959,7 +958,7 @@ textarea.form-control-custom+i {
 
 .header .nav_inner .logo {
     width: 160px;
-    margin: 15px 0;
+    margin: 0 0;
     height: 55px;
 }
 
@@ -992,7 +991,7 @@ textarea.form-control-custom+i {
 .header .navigation .main-menu>.menu-item>a {
     color: var(--thm-color-one);
     font-size: 16px;
-    padding: 28px 15px;
+    padding: 0px 15px;
     display: flex;
     align-items: center;
 }
@@ -2299,4 +2298,52 @@ p.submit-data {
     text-align: left !important;
     margin: 0 !important;
     padding-top: 15px !important;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.social-icon svg {
+    font-size: 29px !important;
+    margin: 0 !important;
+    padding: 0;
+    background-color: transparent;
+    transform: none !important;
+    height: auto !important;
+    width: auto !important;
+    color: #fff;
+    background: transparent !important;
+    line-height: auto !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.contat-page-iconss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.social-icon svg:hover {
+    font-size: 29px !important;
+    margin: 0 !important;
+    padding: 0;
+    background-color: transparent;
+    transform: none !important;
+    height: auto !important;
+    width: auto !important;
+    color: #fff;
+    background: transparent !important;
+    line-height: auto !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    padding: 0 !important;
+    border-radius: 0 !important;
 }

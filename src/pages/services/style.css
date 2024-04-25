@@ -7,6 +7,16 @@
     line-height: normal;
 }
 
+.policyHeading-aass {
+    color: var(--thm-color-green);
+    font-family: "Geogrotesque Wide";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
 .policies-content-here {
     color: #000;
     font-family: "Geogrotesque Wide";

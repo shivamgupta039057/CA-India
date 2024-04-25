@@ -14,7 +14,7 @@ function AboutSection() {
 
     }
     return (
-        <section class="section-padding section-bg no-overlay about-us-section" style={{ background: "#fff" }}>
+        <section class="section-padding section-bg no-overlay about-us-section pt-2" style={{ background: "#fff" }}>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7">

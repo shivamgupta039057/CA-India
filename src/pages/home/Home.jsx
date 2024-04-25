@@ -17,7 +17,7 @@ function Home() {
       {/* <Banner /> */}
       <Subheader
 
-        images={"assets/images/homeHeader.png"}
+        images={"assets/images/shakehand.jpg"}
         clas="classs"
       />
       <AboutSection />
