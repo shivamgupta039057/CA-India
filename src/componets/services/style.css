@@ -37,13 +37,14 @@
     text-align: center;
     font-weight: 900;
     text-align: left;
+    cursor: auto;
 }
 
-.innerdata:hover {
+/* .innerdata:hover {
 
     color: var(--thm-color-blue);
 
-}
+} */
 
 .add-boxes {
 
@@ -97,12 +98,13 @@
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     color: #000;
+    cursor: auto;
 }
 
-.option:hover,
+/* .option:hover,
 .option.selected {
     color: var(--thm-color-one);
-}
+} */
 
 .options-list::-webkit-scrollbar {
     width: 4px;

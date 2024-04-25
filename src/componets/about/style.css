@@ -191,8 +191,15 @@ span.nav-link.active {
         margin-bottom: 10px !important;
     }
 
-    .subheader.section-bg.no-overlay {
-        height: 100px !important;
-        padding: 24px 0;
+    .subheader.classs {
+        height: 145px !important;
+        padding: 120px 0;
+        background-size: contain !important;
+        background-position: center 134px !important;
+    }
+
+    .subheader.classs .page_title {
+        font-size: 20px;
+        margin-top: 23px;
     }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Subheader({ heading, images }) {
+function Subheader({ heading, images, clas }) {
     return (
-        <div class="subheader section-bg no-overlay" style={{ backgroundImage: `url(${images ? images : 'assets/images/blog/blog-bg.png'})`, backgroundPosition: "top center", height: "280px" }}>
+        <div class={`subheader section-bg no-overlay ${clas ? clas : ''}`} style={{ backgroundImage: `url(${images ? images : 'assets/images/blog/blog-bg.png'})`, backgroundPosition: "top center", height: "280px" }}>
             <div className="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">

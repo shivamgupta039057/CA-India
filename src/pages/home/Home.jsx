@@ -3,6 +3,7 @@ import AboutSection from '../../componets/about/AboutSection'
 import Services from '../../componets/services/Services'
 import WhyChooseUS from '../../componets/why-Choose-Us/WhyChooseUS'
 import { useThemeData } from '../../context/Context';
+import Subheader from '../../componets/subheader/Subheader';
 
 
 function Home() {
@@ -14,6 +15,11 @@ function Home() {
   return (
     <>
       {/* <Banner /> */}
+      <Subheader
+
+        images={"assets/images/homeHeader.png"}
+        clas="classs"
+      />
       <AboutSection />
       <Services />
       <WhyChooseUS />

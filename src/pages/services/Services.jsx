@@ -121,8 +121,8 @@ function ServicesPages() {
 
                                                                 className='top-count-heading'><FaAngleDoubleRight /></span> MANAGE BUSINESS
                                                         </div>
-                                                        <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data' id='BusinessManagement'>Business Management</span>:  Our Business Management services are designed to help entrepreneurs, startups, and established businesses navigate challenges, streamline operations, and achieve sustainable growth. We offer comprehensive Business Management services.
+                                                        <div className="col-lg-12 policies-content-here" id='BusinessManagement'>
+                                                            <span className='bold-data' >Business Management</span>:  Our Business Management services are designed to help entrepreneurs, startups, and established businesses navigate challenges, streamline operations, and achieve sustainable growth. We offer comprehensive Business Management services.
                                                         </div>
                                                         <div className="col-lg-12 policies-ul-here">
 
