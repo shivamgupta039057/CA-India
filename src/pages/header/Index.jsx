@@ -106,7 +106,7 @@ function Header() {
                                             <li class="menu-item">
                                                 <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500}
                                                     onClick={() => setIsActivehumber(false)}
-                                                > <span className='inner-more-inner'>  Inconme Tax </ span> </ScrollLink>
+                                                > <span className='inner-more-inner'>  Income Tax </ span> </ScrollLink>
                                             </li>
                                             <li class="menu-item">
                                                 <ScrollLink to='gstdataheree' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>GST  </ span> </ScrollLink>
@@ -142,7 +142,7 @@ function Header() {
                                 <Link to="/blog" className={isactive == "Blog" ? "active" : ''}>Blog</Link>
                             </li>
 
-                            <li class="menu-item menu-item-has-children" onClick={() => handleActiveservices("Services")}>
+                            {/* <li class="menu-item menu-item-has-children" onClick={() => handleActiveservices("Services")}>
                                 <Link to="/services" className={isactive == "Services" ? "active" : ''} onClick={handlesubmenu}>More</Link>
 
                                 <ul className={`sub-menu ${submenu ? "block" : "none"}`} >
@@ -185,7 +185,7 @@ function Header() {
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
 
 
                         </ul>

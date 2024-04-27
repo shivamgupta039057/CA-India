@@ -83,9 +83,9 @@ function Footer() {
 
 
                            </div>
-                           <div className="social-icon">
+                           <div className="social-icon footer-contact">
                               <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#fff" }} /></Link>
-                              <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link>
+                              {/* <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link> */}
                               <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#fff" }} /></Link>
 
                            </div>

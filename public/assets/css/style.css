@@ -2300,13 +2300,14 @@ p.submit-data {
     padding-top: 15px !important;
 }
 
-.social-icon {
+.contat-page-iconss {
     display: flex;
     justify-content: start;
     gap: 15px;
+
 }
 
-.social-icon svg {
+.contat-page-iconss svg {
     font-size: 29px !important;
     margin: 0 !important;
     padding: 0;
@@ -2331,7 +2332,7 @@ p.submit-data {
     margin-bottom: 10px;
 }
 
-.social-icon svg:hover {
+.contat-page-iconss svg:hover {
     font-size: 29px !important;
     margin: 0 !important;
     padding: 0;
@@ -2346,4 +2347,13 @@ p.submit-data {
     display: inline-block;
     padding: 0 !important;
     border-radius: 0 !important;
+}
+
+.social-icon svg {
+    margin: 0 !important;
+}
+
+.social-icon {
+    gap: 5px;
+    margin-left: 77px;
 }

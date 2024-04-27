@@ -46,9 +46,9 @@ function ContactDetails() {
                                 {
                                     item.socialicon ? (
                                         <>
-                                            <div className="social-icon contat-page-iconss">
+                                            <div className="social-icon contat-page-iconss" style={{ marginLeft: 0 }}>
                                                 <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#25D366" }} /></Link>
-                                                <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#0077B5" }} /></Link>
+                                                {/* <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#0077B5" }} /></Link> */}
                                                 <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#0088cc" }} /></Link>
 
                                             </div>

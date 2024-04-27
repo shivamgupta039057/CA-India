@@ -16,7 +16,12 @@
     }
 
     .header .navigation.open {
-        height: 200px;
+        height: 100%;
+    }
+
+    .social-icon {
+        gap: 5px;
+        margin-left: 0 !important;
     }
 
     .classs {
@@ -39,7 +44,7 @@
         height: 0;
         overflow-y: auto;
         width: 100%;
-        background-color: var(--thm-color-two);
+        background-color: var(--thm-color-blue);
         transition: 0.5s all;
         z-index: 100;
     }
