@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Banner from '../../componets/banner/Banner'
 import AboutSection from '../../componets/about/AboutSection'
 import Services from '../../componets/services/Services'
 import WhyChooseUS from '../../componets/why-Choose-Us/WhyChooseUS'
 import { useThemeData } from '../../context/Context';
+import Subheader from '../../componets/subheader/Subheader';
 
 
 function Home() {
@@ -14,7 +14,12 @@ function Home() {
 
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
+      <Subheader
+
+        images={"assets/images/shakehand.jpg"}
+        clas="classs"
+      />
       <AboutSection />
       <Services />
       <WhyChooseUS />

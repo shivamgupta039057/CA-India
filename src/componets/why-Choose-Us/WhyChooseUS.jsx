@@ -26,7 +26,7 @@ function WhyChooseUS() {
         <section class="section contact-pagess">
             <div class="container">
                 <div class="section-header p-0">
-                    <h3 class="title">Why Choose US</h3>
+                    <h3 class="title">Why Choose Us</h3>
                 </div>
                 <div className="row">
                     {whychooseusdetails?.map((item, index) => (

@@ -16,7 +16,15 @@
     }
 
     .header .navigation.open {
-        height: calc(100vh - 85px);
+        height: 200px;
+    }
+
+    .classs {
+        display: none;
+    }
+
+    .about-us-section {
+        padding-top: 120px !important;
     }
 
     .header .navigation .main-menu {
@@ -27,7 +35,7 @@
         display: block;
         position: fixed;
         left: 0;
-        top: 85px;
+        top: 55px;
         height: 0;
         overflow-y: auto;
         width: 100%;
@@ -46,11 +54,33 @@
         font-size: 14px;
         justify-content: space-between;
         display: flex;
-        background-color: var(--thm-color-two);
+        background-color: var(--thm-color-blue);
     }
+
+    .header .navigation .main-menu>.menu-item>a.active,
+    .header .navigation .main-menu>.menu-item:hover>a {
+        color: var(--thm-color-one) !important;
+    }
+
 
     .header .header_actions ul li a span {
         display: none;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu.block {
+        width: 100% !important;
+    }
+
+    .header .navigation .menu-item-has-children .sub-menu.none {
+        width: 100% !important;
+    }
+
+    span.inner-chld {
+        padding: 0 22px;
+    }
+
+    span.inner-more-inner {
+        padding: 0 50px;
     }
 
     .header .navigation .menu-item-has-children .sub-menu {

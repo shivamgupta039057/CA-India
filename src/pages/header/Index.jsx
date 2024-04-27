@@ -1,13 +1,50 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 
 function Header() {
-    const [isactive, setIsActive] = useState('Home')
-    const handleActive = (data) => {
+    const [isactive, setIsActive] = useState('Home');
+    const [isActivehumber, setIsActivehumber] = useState(false);
+    const [submenu, setSubMenu] = useState(false);
+    const [submenuchild, setSubMenuChild] = useState(false)
 
-        setIsActive(data)
+    console.log("submenu", submenu);
+
+
+    const handleActiveBurger = () => {
+
+        setIsActivehumber(!isActivehumber)
 
     }
+    const handleActive = (data) => {
+        setIsActive(data)
+        setIsActivehumber(false)
+    }
+    const handleActiveservices = (data) => {
+
+        setIsActive(data)
+        setIsActivehumber(true)
+
+    }
+
+
+
+
+
+    const handlesubmenu = (e) => {
+
+        setSubMenu(!submenu)
+    };
+
+
+
+    const handlesubmenuChild = () => {
+
+        setSubMenuChild(!submenuchild)
+
+    }
+
+
     return (
         <header class="header can-sticky">
             <div class="container">
@@ -20,55 +57,77 @@ function Header() {
                         </Link>
                     </div>
 
-                    <nav class="navigation">
+                    <nav className={`navigation ${isActivehumber ? 'open' : ''}`}>
                         <ul class="main-menu">
 
                             <li class="menu-item" onClick={() => handleActive("Home")}>
-                                <Link to="/" className={isactive == "Home" ? "active" : ''}>Home</Link>
+                                <Link to="/" className={isactive == "Home" ? "active" : ''} >Home</Link>
                             </li>
-                            <li class="menu-item menu-item-has-children" onClick={() => handleActive("Services")}>
-                                <Link to="/services" className={isactive == "Services" ? "active" : ''}>Services</Link>
-                                <ul class="sub-menu">
+
+                            <li class="menu-item menu-item-has-children" onClick={() => handleActiveservices("Services")}>
+                                <Link to="/services" className={isactive == "Services" ? "active" : ''} onClick={handlesubmenu}>Services</Link>
+
+                                <ul className={`sub-menu ${submenu ? "block" : "none"}`} >
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Start Business</Link>
-                                        <ul class="sub-menu">
+                                        <ScrollLink to='startBussiness' smooth={true} duration={500} onClick={handlesubmenuChild}><span className='inner-chld'>Start Business</span> </ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
                                             <li class="menu-item">
-                                                <Link to='/'>Startup advisory</Link>
+                                                <ScrollLink to='startupAdvisory' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                ><span className='inner-more-inner'>Startup advisory </span></ScrollLink>
                                             </li>
-                                            <li class="menu-item">
-                                                <Link to='/'>Business Registration </Link>
+                                            <li class="menu-item" onClick={handleActive}>
+                                                <ScrollLink to='BusinessRegistration' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}><span className='inner-more-inner'>Business Registration  </span> </ScrollLink>
                                             </li>
-                                            <li class="menu-item">
-                                                <Link to='/'>Business Licenses</Link>
+                                            <li class="menu-item" onClick={handleActive}>
+                                                <ScrollLink to='BusinessLicenses' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                ><span className='inner-more-inner'>Business Licenses </span> </ScrollLink>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Manage Business</Link>
-                                        <ul class="sub-menu">
+                                        <ScrollLink to='ManageBusiness' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Manage Business </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
                                             <li class="menu-item">
-                                                <Link to='/'>Business Management</Link>
+                                                <ScrollLink to='BusinessManagement' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  Business Management </ span> </ScrollLink>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Business Compliances </Link>
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>Business Compliances  </ span> </ScrollLink>
                                             </li>
-                                           
+
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <Link to='/'>Specialized Services</Link>
-                                        <ul class="sub-menu">
+                                        <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Taxation </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
                                             <li class="menu-item">
-                                                <Link to='#id'>Trademark & IP rights</Link>
+                                                <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  Inconme Tax </ span> </ScrollLink>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Non Profit Organisation </Link>
+                                                <ScrollLink to='gstdataheree' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>GST  </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='SpecializedServices' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Specialized Services</span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='Trademark&IPrights' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'> Trademark & IP rights </span></ScrollLink>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Global Structuring</Link>
+                                                <ScrollLink to='NonProfitOrganisation' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'> Non Profit Organisation  </span> </ScrollLink>
                                             </li>
                                             <li class="menu-item">
-                                                <Link to='/'>Extended Services</Link>
+                                                <ScrollLink to='GlobalStructuring' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'> Global Structuring </span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='ExtendedServices' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'> Extended Services </span> </ScrollLink>
                                             </li>
                                         </ul>
                                     </li>
@@ -83,17 +142,50 @@ function Header() {
                                 <Link to="/blog" className={isactive == "Blog" ? "active" : ''}>Blog</Link>
                             </li>
 
-                            {/* <li class="menu-item menu-item-has-children">
-                                <a href="#" class="active">Home</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
-                                        <a href="index.html">Home v1</a>
+                            <li class="menu-item menu-item-has-children" onClick={() => handleActiveservices("Services")}>
+                                <Link to="/services" className={isactive == "Services" ? "active" : ''} onClick={handlesubmenu}>More</Link>
+
+                                <ul className={`sub-menu ${submenu ? "block" : "none"}`} >
+                                    <li class="menu-item ">
+                                        <ScrollLink to='' smooth={true} duration={500} onClick={handlesubmenuChild}><span className='inner-chld'>Knowledge Hub</span> </ScrollLink>
+
                                     </li>
-                                    <li class="menu-item">
-                                        <Link to='/'>Home v2</a>
+                                    <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='ManageBusiness' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Financial Calculators </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessManagement' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  	Loan EMI </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>	SIP   </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>		Simple Interest   </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='BusinessCompliances' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>		Lumpsum    </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500} onClick={handlesubmenuChild}> <span className='inner-chld'> Tax Tools </span></ScrollLink>
+                                        <ul onClick={handlesubmenu} className={`sub-menu ${submenuchild ? "block" : "none"}`}>
+                                            <li class="menu-item">
+                                                <ScrollLink to='Taxation-paragrapg' smooth={true} duration={500}
+                                                    onClick={() => setIsActivehumber(false)}
+                                                > <span className='inner-more-inner'>  	Tax under Old Regime Vs New Regime </ span> </ScrollLink>
+                                            </li>
+                                            <li class="menu-item">
+                                                <ScrollLink to='gstdataheree' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'>	Income and Tax Calculator  </ span> </ScrollLink>
+                                            </li>
+
+                                        </ul>
                                     </li>
                                 </ul>
-                            </li> */}
+                            </li>
 
 
                         </ul>
@@ -106,14 +198,14 @@ function Header() {
                                 </a>
                             </li> */}
                             <li class="user_btn">
-                                <a href="contact.html">
-                                    <span>Support</span>
+                                <Link to="/contact">
+
                                     <i class="bi-headset"></i>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
-                        <div class="hamburger">
-                            <div class="hamburger_btn">
+                        <div class="hamburger" onClick={handleActiveBurger}>
+                            <div className={`hamburger_btn  ${isActivehumber ? "active" : ''} `}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -122,8 +214,8 @@ function Header() {
                     </div>
 
                 </div>
-            </div>
-        </header>
+            </div >
+        </header >
     )
 }
 

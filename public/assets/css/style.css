@@ -222,6 +222,12 @@ img {
     margin-bottom: 30px;
 }
 
+.subheader.classs {
+
+    padding: 80px 0 80px;
+    background-size: contain;
+}
+
 
 .section-bg {
     background-size: cover;
@@ -921,7 +927,7 @@ textarea.form-control-custom+i {
 }
 
 .header {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgb(var(--thm-color-two-rgb), 15%);
     left: 0;
@@ -952,7 +958,7 @@ textarea.form-control-custom+i {
 
 .header .nav_inner .logo {
     width: 160px;
-    margin: 15px 0;
+    margin: 0 0;
     height: 55px;
 }
 
@@ -985,7 +991,7 @@ textarea.form-control-custom+i {
 .header .navigation .main-menu>.menu-item>a {
     color: var(--thm-color-one);
     font-size: 16px;
-    padding: 28px 15px;
+    padding: 0px 15px;
     display: flex;
     align-items: center;
 }
@@ -1018,13 +1024,55 @@ textarea.form-control-custom+i {
     opacity: 0;
 }
 
+.header .navigation .menu-item-has-children .sub-menu.none {
+
+    width: 205px !important;
+
+}
+
+.header .navigation .menu-item-has-children .sub-menu.block {
+
+    width: 205px !important;
+
+}
+
+li.menu-item.menu-item-has-children:hover .sub-menu {
+    display: block !important;
+}
+
+.classs .page_title {
+    color: var(--thm-color-blue);
+}
+
+.classs .overlay {
+    display: none;
+}
+
+.services-dd {
+    display: flex;
+    justify-content: center;
+}
+
 .header .navigation .menu-item-has-children:hover>.sub-menu {
     opacity: 1;
     visibility: visible;
+    display: block;
+}
+
+a.thm-btn.sdf {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    color: var(--thm-color-one);
+}
+
+ul.sub-menu.none {
+    display: none !important;
 }
 
 .header .navigation .menu-item-has-children .sub-menu .menu-item>a {
-    background-color: var(--thm-color-two);
+    background-color: var(--thm-color-blue);
     color: var(--thm-white);
     width: 100%;
     display: flex;
@@ -1085,6 +1133,11 @@ textarea.form-control-custom+i {
 .header .header_actions ul li.user_btn a:hover i {
     background-color: var(--thm-color-blue);
     color: var(--thm-white);
+}
+
+.post-img.animate-img {
+    display: flex;
+    justify-content: center;
 }
 
 .header .hamburger {
@@ -1163,7 +1216,7 @@ textarea.form-control-custom+i {
 
 /*subheader*/
 .subheader {
-    padding: 110px 0 80px;
+    padding: 165px 0 80px;
 }
 
 .subheader .page_title {
@@ -2224,7 +2277,9 @@ textarea.form-control-custom+i {
     z-index: 1;
     transition: all 400ms linear;
 }
-.thm-btn:hover, .thm-btn:focus {
+
+.thm-btn:hover,
+.thm-btn:focus {
     color: var(--thm-color-one);
     background-color: var(--thm-white);
     border: 1px solid var(--thm-color-one);
@@ -2239,8 +2294,56 @@ textarea.form-control-custom+i {
 }
 
 p.submit-data {
-    color: var(--thm-color-green) !important ;
+    color: var(--thm-color-green) !important;
     text-align: left !important;
     margin: 0 !important;
     padding-top: 15px !important;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.social-icon svg {
+    font-size: 29px !important;
+    margin: 0 !important;
+    padding: 0;
+    background-color: transparent;
+    transform: none !important;
+    height: auto !important;
+    width: auto !important;
+    color: #fff;
+    background: transparent !important;
+    line-height: auto !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.contat-page-iconss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.social-icon svg:hover {
+    font-size: 29px !important;
+    margin: 0 !important;
+    padding: 0;
+    background-color: transparent;
+    transform: none !important;
+    height: auto !important;
+    width: auto !important;
+    color: #fff;
+    background: transparent !important;
+    line-height: auto !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    padding: 0 !important;
+    border-radius: 0 !important;
 }

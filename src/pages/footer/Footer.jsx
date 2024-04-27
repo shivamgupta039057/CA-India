@@ -5,6 +5,10 @@ import { IoMdMail } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { useThemeData } from '../../context/Context';
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa6";
+
 
 
 
@@ -25,7 +29,7 @@ function Footer() {
    return (
       <footer class="footer-section">
          <div class="container">
-            <div class="footer-content pt-5 pb-5">
+            <div class="footer-content pt-3">
                <div class="row">
 
                   <div class=" col-lg-4 col-md-6 mb-30 mt-3">
@@ -75,6 +79,14 @@ function Footer() {
                                  <a href="mailto:contact@cavinaykumar.in" style={{ color: "#fff" }}>contact@cavinaykumar.in</a>
 
                               </div>
+
+
+
+                           </div>
+                           <div className="social-icon">
+                              <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#fff" }} /></Link>
+                              <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link>
+                              <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#fff" }} /></Link>
 
                            </div>
                         </div>
