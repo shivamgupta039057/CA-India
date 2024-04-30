@@ -88,10 +88,6 @@ function Contact() {
     return (
         <>
 
-            <Subheader
-                images={"assets/images/contact-us-sub.jpg"}
-            />
-
 
 
 
@@ -99,11 +95,11 @@ function Contact() {
             <section class="section contact-pagess">
                 <div class="container">
                     <div class="section-header p-0">
-                        
+
                         <p className='submit-data'>{result ? result : ''}</p>
                     </div>
 
-                    <form className="row contact_form" onSubmit={handleSubmit} style={{ alignItems: "center" }}>
+                    <form className="row contact_form" onSubmit={handleSubmit} style={{ alignItems: "start" }}>
                         <div className="col-lg-4">
                             <ContactDetails />
                         </div>

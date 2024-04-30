@@ -14,7 +14,7 @@ function Blog() {
     }, [countdata])
     return (
         <>
-            <Subheader />
+            {/* <Subheader /> */}
             <BlogSection />
         </>
     )

@@ -8,6 +8,7 @@ import { useThemeData } from '../../context/Context';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
+import { IoShareSocial } from "react-icons/io5";
 
 
 
@@ -83,12 +84,22 @@ function Footer() {
 
 
                            </div>
-                           <div className="social-icon footer-contact">
-                              <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#fff" }} /></Link>
-                              {/* <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link> */}
-                              <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#fff" }} /></Link>
+
+                           <div class="footer-text mb-25">
+                              <div class="footer-contact">
+                                 <IoShareSocial />
+                                 <div className="social-icn footer-contac">
+                                    <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#fff", background: "#25D366" }} /></Link>
+                                    {/* <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link> */}
+                                    <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#fff", background: "#0088cc" }} /></Link>
+
+                                 </div>
+                              </div>
+
+
 
                            </div>
+
                         </div>
                         {/* <div class="footer-social-icon"> 
                    Follow us
