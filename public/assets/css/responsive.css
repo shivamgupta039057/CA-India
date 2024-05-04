@@ -49,6 +49,10 @@
         z-index: 100;
     }
 
+    h6.policyHeading-aass {
+        padding-top: 40px;
+    }
+
     .header.style_two .navigation .main-menu>.menu-item:first-child>a,
     .header .navigation .menu-item-has-children .sub-menu .menu-item>a,
     .header .navigation .main-menu>.menu-item>a {

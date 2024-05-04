@@ -19,18 +19,6 @@ function ContactDetails() {
             link: "tel:+ 918790595858"
         },
         {
-            icon: FaWhatsapp,
-            heading: 'WhatsApp',
-            subheading: ' Message Us',
-            link: "https://wa.me/8918790595858"
-        },
-        {
-            icon: FaTelegram,
-            heading: 'Telegram',
-            subheading: ' Message Us',
-            link: "https://t.me/cavinaykumar_7"
-        },
-        {
             icon: IoMdMail,
             heading: ' contact@cavinaykumar.in',
             subheading: 'Mail Us',
@@ -49,6 +37,22 @@ function ContactDetails() {
         <section className="section-padding services-section-to p-0">
             <div className="container">
                 <div className="row">
+                    <div className="col-sm-12">
+                        <div className="contact-info-box mb-md-40">
+                            <Link to='#' target='_blank'>
+                                <img src="assets/images/dm.png" className='dm-class-foterr' alt="" style={{ color: '#000', zIndex: '999' }} />
+                                <h6 className="text-theme fw-600">{`Direct Messages`}
+                                    <br />
+                                    <div className="whatsappp-telegram">
+                                        <Link to='https://t.me/cavinaykumar_in' target='_blank'><FaTelegram style={{ background: `#0088cc` }} /></Link>
+                                        <Link to='https://wa.me/918790595858' target='_blank'><FaWhatsapp style={{ background: `#25D366` }} /></Link>
+                                    </div>
+
+
+                                </h6>
+                            </Link>
+                        </div>
+                    </div>
                     {contactDetails?.map((item, index) => (
                         <div className="col-sm-12" key={index}>
                             <div className="contact-info-box mb-md-40">
@@ -62,7 +66,11 @@ function ContactDetails() {
                         </div>
                     ))}
 
+
                 </div>
+
+
+
             </div>
 
         </section>

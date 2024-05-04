@@ -87,11 +87,11 @@ function Footer() {
 
                            <div class="footer-text mb-25">
                               <div class="footer-contact">
-                                 <IoShareSocial />
+                                 <img src="assets/images/dm.png" className='dm-class-foterr' alt="" style={{ color: '#fff', zIndex: '999', width: '35px', margin: '0 10px' }} />
                                  <div className="social-icn footer-contac">
-                                    <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#fff", background: "#25D366" }} /></Link>
+                                    <Link to='https://wa.me/918790595858' target='_blank'><FaWhatsapp style={{ color: "#fff", background: "#25D366" }} /></Link>
                                     {/* <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#fff" }} /></Link> */}
-                                    <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#fff", background: "#0088cc" }} /></Link>
+                                    <Link to='https://t.me/cavinaykumar_in' target='_blank'><FaTelegram style={{ color: "#fff", background: "#0088cc" }} /></Link>
 
                                  </div>
                               </div>

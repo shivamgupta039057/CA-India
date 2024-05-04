@@ -2357,3 +2357,23 @@ p.submit-data {
     gap: 5px;
     margin-left: 77px;
 }
+
+.whatsappp-sidebar {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 36px;
+    border: 1px solid #25d366;
+    color: #fff;
+    background: #25d366;
+    transition-duration: .3s;
+    font-size: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    text-align: center;
+}
