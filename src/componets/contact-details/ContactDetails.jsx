@@ -41,7 +41,7 @@ function ContactDetails() {
                         <div className="contact-info-box mb-md-40">
                             <Link to='#' target='_blank'>
                                 <img src="assets/images/dm.png" className='dm-class-foterr' alt="" style={{ color: '#000', zIndex: '999' }} />
-                                <h6 className="text-theme fw-600">{`Direct Messages`}
+                                <h6 className="text-theme fw-600">{`Direct Message`}
                                     <br />
                                     <div className="whatsappp-telegram">
                                         <Link to='https://t.me/cavinaykumar_in' target='_blank'><FaTelegram style={{ background: `#0088cc` }} /></Link>

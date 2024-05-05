@@ -93,7 +93,7 @@ function ServicesPages() {
                                                                     </div>
 
                                                                     <ul services-unorder-list>
-                                                                        <li><span><FaAngleRight /></span>Nudging Business idea to plan</li>
+                                                                        {/* <li><span><FaAngleRight /></span>Nudging Business idea to plan</li> */}
                                                                         <li><span><FaAngleRight /></span>Labour License (Shop & Est)</li>
                                                                         <li><span><FaAngleRight /></span>Trade License</li>
                                                                         <li><span><FaAngleRight /></span>Drug License</li>
