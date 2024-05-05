@@ -27,41 +27,50 @@ function ContactDetails() {
         },
         {
             icon: FaLocationDot,
-            heading: '8-3-169/1, 301,',
-            subheading: ' Hyderabad 500038'
+            heading: 'Hyderabad 500038',
+            subheading: ' 8-3-169/1, 301,',
+            link: "#",
         },
+
     ]
     return (
         <section className="section-padding services-section-to p-0">
             <div className="container">
                 <div className="row">
+                    <div className="col-sm-12">
+                        <div className="contact-info-box mb-md-40">
+                            <Link to='#' target='_blank'>
+                                <img src="assets/images/dm.png" className='dm-class-foterr' alt="" style={{ color: '#000', zIndex: '999' }} />
+                                <h6 className="text-theme fw-600">{`Direct Messages`}
+                                    <br />
+                                    <div className="whatsappp-telegram">
+                                        <Link to='https://t.me/cavinaykumar_in' target='_blank'><FaTelegram style={{ background: `#0088cc` }} /></Link>
+                                        <Link to='https://wa.me/918790595858' target='_blank'><FaWhatsapp style={{ background: `#25D366` }} /></Link>
+                                    </div>
+
+
+                                </h6>
+                            </Link>
+                        </div>
+                    </div>
                     {contactDetails?.map((item, index) => (
                         <div className="col-sm-12" key={index}>
                             <div className="contact-info-box mb-md-40">
-                                <a href={item.link}>
-                                    <item.icon />
+                                <Link to={item.link} target='_blank'>
+                                    <item.icon style={{ background: `${item.heading === 'WhatsApp' ? "#25D366" : (item.heading === 'Telegram' ? "#0088cc" : "")}` }} />
                                     <h6 className="text-theme fw-600">{item.subheading}
                                         <br /> <span className='details-lower'>{item?.heading}</span></h6>
-                                </a>
-                                {
-                                    item.socialicon ? (
-                                        <>
-                                            <div className="social-icon contat-page-iconss">
-                                                <Link to="https://wa.me/8918790595858" target='_blank'><FaWhatsapp style={{ color: "#25D366" }} /></Link>
-                                                <Link to="https://www.linkedin.com/in/vinay-kumar-mandava/" target='_blank'><FaLinkedinIn style={{ color: "#0077B5" }} /></Link>
-                                                <Link to="https://t.me/cavinaykumar_7" target='_blank'><FaTelegram style={{ color: "#0088cc" }} /></Link>
-
-                                            </div>
-                                        </>
-                                    ) : <></>
-                                }
-
+                                </Link>
                             </div>
 
                         </div>
                     ))}
 
+
                 </div>
+
+
+
             </div>
 
         </section>

@@ -16,9 +16,7 @@ function ServicesPages() {
     }, [countdata])
     return (
         <>
-            <Subheader
 
-            />
             {/*  */}
 
             <section class="section-padding bg-light-white blog-details">

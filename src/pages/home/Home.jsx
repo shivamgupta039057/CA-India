@@ -15,11 +15,11 @@ function Home() {
   return (
     <>
       {/* <Banner /> */}
-      <Subheader
+      {/* <Subheader
 
         images={"assets/images/shakehand.jpg"}
         clas="classs"
-      />
+      /> */}
       <AboutSection />
       <Services />
       <WhyChooseUS />
