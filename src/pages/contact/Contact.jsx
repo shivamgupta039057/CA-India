@@ -105,7 +105,7 @@ function Contact() {
                         </div>
                         <div className="col-lg-8">
                             <div className="para-data">
-                                <p>We recognize that every individual and business have distinct needs.<br /> Please use the form below to request a call back.</p>
+                                <p>We recognize that every Individual and Business have distinct needs.<br /> Please use the form below to request a call back.</p>
                             </div>
                             <div className="form-group form-floating">
                                 <input
