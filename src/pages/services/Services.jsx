@@ -261,7 +261,7 @@ function ServicesPages() {
 
                                                         </div>
 
-                                                        <div className="col-lg-12 policies-content-here">
+                                                        {/* <div className="col-lg-12 policies-content-here">
                                                             <span className='bold-data' id='GlobalStructuring'>Global Structuring:</span>
 
                                                             In today's globalized business landscape, expanding your operations across borders requires expert guidance to navigate the complexities of international tax regulations and business strategies. Here's how we can assist you:
@@ -276,7 +276,7 @@ function ServicesPages() {
                                                                 <li><span><FaAngleRight /></span>Business Set Up Globally</li>
                                                             </ul>
 
-                                                        </div>
+                                                        </div> */}
 
                                                         <div className="col-lg-12 policies-content-here">
                                                             <span className='bold-data' id='ExtendedServices'>Extended Services:</span>

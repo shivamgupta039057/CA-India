@@ -133,15 +133,15 @@ function Services() {
                 "80G Certificate – Tax Free Donations"
             ]
         },
-        {
-            heading: "Global Structuring",
-            innerOptions: [
-                "Tax and business restructuring",
-                "Transfer pricing documentation",
-                "Annual FEMA compliance",
-                "Business set up globally"
-            ]
-        }
+        // {
+        //     heading: "Global Structuring",
+        //     innerOptions: [
+        //         "Tax and business restructuring",
+        //         "Transfer pricing documentation",
+        //         "Annual FEMA compliance",
+        //         "Business set up globally"
+        //     ]
+        // }
     ];
 
     const toggleOptionsList = (index) => {
