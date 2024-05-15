@@ -123,9 +123,9 @@ function Header() {
                                             <li class="menu-item">
                                                 <ScrollLink to='NonProfitOrganisation' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'><Link to='/services'> Non Profit Organisation  </Link> </span> </ScrollLink>
                                             </li>
-                                            {/* <li class="menu-item">
-                                                <ScrollLink to='GlobalStructuring' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'><Link to='/services'> Global Structuring  </Link></span> </ScrollLink>
-                                            </li> */}
+                                            <li class="menu-item">
+                                                <ScrollLink to='CACertifications' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'><Link to='/services'> CA Certifications  </Link></span> </ScrollLink>
+                                            </li>
                                             <li class="menu-item">
                                                 <ScrollLink to='ExtendedServices' smooth={true} duration={500} onClick={() => setIsActivehumber(false)}> <span className='inner-more-inner'><Link to='/services'> Extended Services </Link> </span> </ScrollLink>
                                             </li>

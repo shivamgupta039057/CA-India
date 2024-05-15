@@ -20,7 +20,7 @@ function Services() {
         'Business Compliances ', // For box 3
         'Trademark & IP Rights ', // For box 3
         'Non-Profit Organization ', // For box 3
-        'Global structuring ', // For box 3
+        'CA Certifications ', // For box 3
         // For box 3
         // Add more initial values as needed
     ]);
@@ -49,7 +49,8 @@ function Services() {
                 "Drug License",
                 "Import Export Code (IEC)",
                 "Food Safety License",
-                "MSME Udyam Aadhaar"
+                "MSME Udyam Aadhaar",
+                "Digital Signature Certificate (DSC)"
             ]
         },
         {
@@ -133,15 +134,16 @@ function Services() {
                 "80G Certificate – Tax Free Donations"
             ]
         },
-        // {
-        //     heading: "Global Structuring",
-        //     innerOptions: [
-        //         "Tax and business restructuring",
-        //         "Transfer pricing documentation",
-        //         "Annual FEMA compliance",
-        //         "Business set up globally"
-        //     ]
-        // }
+        {
+            heading: "CA Certifications",
+            innerOptions: [
+                "Net Worth Certificate for person going abroad",
+                "Certificate under GST Law-Claim for refund",
+                "Issuing Certificates under the Income Tax Act",
+                "Certification for LIC/Passport/Credit card, etc",
+                "Attestation and certification under various other laws"
+            ]
+        }
     ];
 
     const toggleOptionsList = (index) => {

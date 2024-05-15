@@ -261,36 +261,38 @@ function ServicesPages() {
 
                                                         </div>
 
-                                                        {/* <div className="col-lg-12 policies-content-here">
-                                                            <span className='bold-data' id='GlobalStructuring'>Global Structuring:</span>
+                                                        <div className="col-lg-12 policies-content-here">
+                                                            <span className='bold-data' id='CACertifications'>CA Certifications:</span>
 
-                                                            In today's globalized business landscape, expanding your operations across borders requires expert guidance to navigate the complexities of international tax regulations and business strategies. Here's how we can assist you:
+                                                            A "Certificate" is an official document that confirms a fact. Everyone, including individuals, partnerships, and businesses, often need certification from Chartered Accountants for various legal and regulatory reasons, both in India and abroad. Here are some common situations where a Chartered Accountant's certificate is required:
+
 
                                                         </div>
                                                         <div className="col-lg-12 policies-ul-here">
 
                                                             <ul>
-                                                                <li><span><FaAngleRight /></span>Tax and Business Restructuring</li>
-                                                                <li><span><FaAngleRight /></span>Transfer Pricing Documentation</li>
-                                                                <li><span><FaAngleRight /></span>Annual FEMA Compliance</li>
-                                                                <li><span><FaAngleRight /></span>Business Set Up Globally</li>
+                                                                <li><span><FaAngleRight /></span>Net Worth Certificate for person going abroad</li>
+                                                                <li><span><FaAngleRight /></span>Certificate under GST Law-Claim for refund</li>
+                                                                <li><span><FaAngleRight /></span>Issuing Certificates under the Income Tax Act</li>
+                                                                <li><span><FaAngleRight /></span>Certification for LIC/Passport/Credit card, etc</li>
+                                                                <li><span><FaAngleRight /></span>Attestation and certification under various other laws</li>
                                                             </ul>
 
-                                                        </div> */}
+                                                        </div>
 
                                                         <div className="col-lg-12 policies-content-here">
                                                             <span className='bold-data' id='ExtendedServices'>Extended Services:</span>
 
                                                             Despite the core list of services mentioned above, there are numerous cases for which clients may require Chartered Accountancy services. Therefore, we offer a wide range of extended services, including MSME arbitration and Due Diligence. Please feel free to reach out with your requirements using our contact form.
 
-                                                        </div>
+                                                        {/* </div>
                                                         <div className="col-lg-12 policies-ul-here">
 
                                                             <ul>
                                                                 <li><span><FaAngleRight /></span>CA Certifications</li>
                                                                 <li><span><FaAngleRight /></span>MSME Arbitration</li>
                                                                 <li><span><FaAngleRight /></span>Due Diligence</li>
-                                                            </ul>
+                                                            </ul> */}
 
                                                         </div>
 
